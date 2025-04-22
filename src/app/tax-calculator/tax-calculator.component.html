@@ -1,0 +1,14 @@
+<div class="calculator">
+    <h2>Sri Lanka PAYE Tax Savings Calculator</h2>
+    <label for="income">Monthly Income (LKR):</label>
+    <input type="number" id="income" [(ngModel)]="monthlyIncome" />
+    <button (click)="calculateTax()">Calculate</button>
+  
+    <div>
+      <p><strong>Old Tax (Before April 2025):</strong> Rs. {{ oldTax | number:'1.2-2' }}</p>
+      <p><strong>New Tax (From April 2025):</strong> Rs. {{ newTax | number:'1.2-2' }}</p>
+      <p><strong>Tax Savings:</strong> Rs. {{ taxSavings | number:'1.2-2' }}</p>
+    </div>
+
+  </div>
+  
